@@ -1,0 +1,18 @@
+HTTP/1.1 200 OK
+Server: nginx/0.7.67
+Date: Mon, 03 Jan 2011 11:21:24 GMT
+Content-Type: text/html; charset=utf-8
+Connection: keep-alive
+ETag: "3fed1f829c225eb0bf2f90d7835f369b"
+X-UA-Compatible: IE=Edge,chrome=1
+X-Runtime: 0.027500
+Set-Cookie: _gitty_login=pwnall; path=/; HttpOnly
+Cache-Control: max-age=0, private, must-revalidate
+
+
+<!DOCTYPE html>
+<html>
+<head>
+<!-- truncated -->
+</body>
+</html>

@@ -1,0 +1,13 @@
+POST /_/repositories HTTP/1.1
+Host: git.pwnb.us
+User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10.6; rv:2.0b8) Gecko/20100101 Firefox/4.0b8
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+Accept-Language: en-us,en;q=0.5
+Accept-Encoding: plain
+Accept-Charset: ISO-8859-1,utf-8;q=0.7,*;q=0.7
+Keep-Alive: 115
+Connection: keep-alive
+Referer: http://git.pwnb.us/_/repositories/new
+Cookie: _gitty_login=pwnall
+
+profile_name=pwnall&name=awesome&description=I+am+awesome&public=1

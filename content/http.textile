@@ -1,0 +1,66 @@
+h1. HTTP: HyperText Transfer Protocol
+
+1. HTTP
+2. Cookies
+3. Content
+
+h1. HTTP Protocol
+
+HTTP 1.0
+
+1. Client opens TCP connection to server
+1. Client sends HTTP request
+1. Server sends HTTP response
+1. Server closes TCP connection
+1. Client closes TCP connection
+
+HTTP 1.1
+* Optimization: use the same TCP connection for subsequent requests-response pairs
+* Still stateless: response determined by last request
+
+h1. HTTP Protocol: Request Example I
+
+:code code/http_request.http
+
+h1. HTTP Protocol: Request
+
+# Verb (GET, POST, PUT, DELETE)
+# Address (part of the URL)
+# Request Headers
+# Data
+
+h1. HTTP Protocol: Request Example II
+
+:code code/http_request_2.http
+
+h1. HTTP Protocol: Response
+
+# Status code and text (200 OK, 404 Not Found, ...)
+# Response headers
+# Response data
+
+h1. HTTP Protocol: Response Example
+
+:code code/http_response.http
+
+h1. HTTP Demo 1
+
+* @telnet@ is available on Windows, Mac OSX, and Linux
+
+h1. Cookies
+
+Concepts
+* Add state to HTTP, which is stateless
+* Each site gets a cookie jar
+* Cookie jar: key-value pairs, max size 4kb
+
+Protocol
+* HTTP response header @Set-Cookie@ sets cookies
+* Future HTTP requests have cookie jar in @Cookie@ header
+
+Find the cookie in the previous examples!
+
+h1. HTTP Demo 2
+
+* Firefox browser: "getfirefox.com":http://getfirefox.com
+* Firebug plugin: "getfirebug.com":http://getfirebug.com

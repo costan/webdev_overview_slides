@@ -1,0 +1,43 @@
+h1. Big Picture
+
+h1. Your Instructors
+
+* Victor Costan
+
+h1. Brief Web History
+
+* Developed by Tim Berners-Lee et al. in 1989-1991
+* Conceived to share papers and experimental data for Physics
+* Every major OS included Web access software by 1997
+* Grew organically into the most popular application platform
+
+h1. Lots of Terms and Acronyms
+
+* DNS, FQDN, TLD, TCP/IP, ISP, Ethernet, LAN, 802.11, GSM, EDGE, 3G, EVDO, domain, IP address
+* HTML, CSS, JS, JSON, XML, HTTP, HTTPS, WAP, cookies, proxy, applets, plug-ins, extensions, Flash, Silverlight
+* ASP, JSP, PHP, RoR, API, SLA, EC2, S3, DC, rack, server
+* SQL, NoSQL, MySQL, Memcache, schema, tables, records, expiration policy
+
+h1. Everything Comes Down to This
+
+* One usage scenario.
+* One protocol.
+
+h1. Usage Scenario
+
+# Publisher (author) loads data on a server.
+# Consumer (user) points client software (browser) to the server.
+# Client requests main document (page) from server.
+# Client requests documents included by main document.
+# Consumer follows (clicks on) a link in main document to reach another document.
+# Rinse, repeat.
+
+h1. Big (Technical) Picture
+
+* Client gets a document from server.
+* HTTP (Hyper-Text Transfer Protocol)
+
+h1. Browsing Demo
+
+* Firefox browser: "getfirefox.com":http://getfirefox.com
+* Firebug plugin: "getfirebug.com":http://getfirebug.com

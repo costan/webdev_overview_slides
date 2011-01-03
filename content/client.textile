@@ -1,0 +1,16 @@
+h1. Client Side
+
+* a.k.a. The Front-End
+
+h1. Client's View of World
+
+* Web page = HTML file + references
+* References
+** Presentation (style): CSS
+** Multimedia: image, video, audio
+** Behavior (scripts): JavaScript
+** Behavior (plug-ins): Flash etc.
+
+h1. HTML Example
+
+:code code/html_page.html[lang=html]
