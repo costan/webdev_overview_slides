@@ -41,7 +41,9 @@ h1. Application Server
   ** How does the homepage look like?
   ** How do users sign in?
   ** What happens when a user friends another user?
- 
+  
+* Talks to other servers (e.g. Facebook) via APIs.
+
 * Usually in high-level languages
   ** PHP, Python, Ruby, Asp.Net
 
@@ -72,8 +74,9 @@ h1. Database Request Example
 
 :code code/queries.sql[lang=sql]
 
-h1. 1,000 Foot View
+h1. 1,000 Foot View Review
 
-# Load balancer
-# Application server
-# Database server
+* HTTP request generally goes through the following.
+  ## Load balancer
+  ## Application server
+  ## Database server
