@@ -1,3 +1,74 @@
 h1. Server Side
 
 * a.k.a. The Back-End
+
+h1. 10,000 Foot View
+
+# Read HTTP request
+# Write HTTP response
+
+h1. 1,000 Foot View
+
+# Load balancer
+# Application server
+# Database server
+
+h1. Load Balancer
+
+* Primary mission
+  ## Receive HTTP request
+  ## Relay request to one of many application servers
+  ## Relay HTTP response to client
+* Overloaded with many tasks
+  ** Protocol management: security (HTTPS), compression
+  ** Security: clean up HTTP requests, prevent against DoS
+  ** Optimization: serve files in response to HTTP requests
+* Implementations
+  ** @apache@, @haproxy@, @nginx@
+
+h1. Load Balancer Configuration
+
+:code code/nginx.conf
+
+h1. Application Server
+
+* Business logic
+  ** How does the homepage look like?
+  ** How do users sign in?
+  ** What happens when a user friends another user?
+ 
+* Usually in high-level languages
+  ** PHP, Python, Ruby, Asp.Net
+
+* Each HTTP request is its own world
+  ** Use database to remember things between HTTP requests
+
+h1. Application Server Example: PHP
+
+:code code/example.php[lang=html]
+
+h1. Database Server
+
+* Stores data
+  ** Standard format: tables (like Excel spreadsheets)
+  ** Standard protocol: SQL
+  
+* Solution to some very difficult problems
+  ** Concurrent requests (transactions)
+  ** Resiliency to failures (power outages, broken hard disks, etc.)
+  
+* Implementations
+  ** Very hard to get right.
+  ** Used to be very expensive.
+  ** Free: MySQL, PostgreSQL, SQLite
+  ** Paid: Microsoft SQL Server, Oracle
+
+h1. Database Request Example
+
+:code code/queries.sql[lang=sql]
+
+h1. 1,000 Foot View
+
+# Load balancer
+# Application server
+# Database server

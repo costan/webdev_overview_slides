@@ -9,7 +9,7 @@ h1. Client's View of World
 ** Presentation (style): CSS
 ** Multimedia: image, video, audio
 ** Behavior (scripts): JavaScript
-** Behavior (plug-ins): Flash etc.
+** Behavior (plug-ins): Flash, Silverlight etc.
 
 h1. HTML Example
 
